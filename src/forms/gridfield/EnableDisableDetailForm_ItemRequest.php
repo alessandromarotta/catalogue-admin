@@ -3,7 +3,7 @@
 namespace SilverCommerce\CatalogueAdmin\Forms\GridField;
 
 use SilverStripe\Forms\GridField\GridFieldDetailForm;
-use SilverStripe\Forms\GridField\GridFieldDetailForm_ItemRequest;
+use SilverStripe\Versioned\VersionedGridFieldItemRequest;
 use SilverStripe\Security\Security;
 use SilverStripe\Core\Convert;
 use SilverStripe\Control\Controller;
@@ -14,7 +14,7 @@ use SilverStripe\Forms\FormAction;
  *
  * @author ilateral
  */
-class EnableDisableDetailForm_ItemRequest extends GridFieldDetailForm_ItemRequest
+class EnableDisableDetailForm_ItemRequest extends VersionedGridFieldItemRequest
 {
 
     private static $allowed_actions = array(
